@@ -76,15 +76,14 @@ ul {
   justify-content: start;
   padding: 1rem;
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1), /* Larger shadow */
-  0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1),
+    /* Larger shadow */ 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-
 .list_img {
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 0.625rem;
 }
 
@@ -92,12 +91,12 @@ ul {
   display: flex;
   justify-content: start;
   align-items: start;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .thumbs_up {
   background-color: #222;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 0.625rem;
   display: flex;
   justify-content: center;
@@ -131,8 +130,26 @@ ul {
   position: absolute;
   top: 5%;
   left: 2%;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.8rem;
+}
+.heart_fav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.heart_fav img {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
 }
 
 .verified_tick img {
@@ -145,7 +162,7 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #077838;
-  padding: 0.3rem 0.5rem;
+  padding: 0.1rem 0.8rem;
   border-radius: 0.3125rem;
   color: #fff;
   font-family: DM Sans;
@@ -158,7 +175,7 @@ ul {
   font-size: 25px;
   font-family: Times;
   line-height: 1;
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
   margin-right: 0.3rem;
 }
 
@@ -174,29 +191,25 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-.fb_star_section {
-  margin-top: 1rem;
-}
-
 .fb_flex {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .total_ratings {
   color: #acacac;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .list_location {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
   font-size: 1rem;
 }
 
@@ -209,56 +222,48 @@ ul {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .extra_sport {
   background-color: #f5ebeb;
   color: #626060;
-  padding: 0.35rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 0.3125rem;
   width: auto;
   font-size: 0.75rem;
 }
 
-.view_list_btn,
 .view_list_btn_2 {
-  padding: 7px 15px;
+  padding:15px;
   border-radius: 0.3125rem;
-  color: #fff;
-  background-color: #077838;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   border: none;
   outline: none;
   cursor: pointer;
   height: 2rem;
-  border: 1px solid transparent;
-}
-
-.view_list_btn_2 {
   border: 1px solid #077838;
   color: #077838;
   background-color: #fff;
 }
 
-.view_list_btn img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .list_btn {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   gap: 1rem;
+  background-color: #dcdcdc;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .gap {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .carousel {
   position: relative;
@@ -293,8 +298,10 @@ ul {
   width: 100%; /* Take up the full width of the carousel. */
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  text-align: center;
+  text-align: end;
   box-sizing: border-box; /* Ensures padding doesn't add to the width. */
+  padding-right: 1rem;
+  font-size: 0.875rem;
 }
 
 .dot {
@@ -312,14 +319,34 @@ ul {
   width: 12px;
 }
 
+.white_phone, .white_whatsapp {
+  background-color: #0076d7;
+  border-radius: 0.625rem;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.white_phone img, .white_whatsapp img{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.white_whatsapp{
+  background-color: #077838;
+}
+
 @media only screen and (max-width: 1270px) {
   .list_top h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .thumbs_up {
     background-color: #222;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 0.625rem;
     display: flex;
     justify-content: center;
@@ -357,13 +384,9 @@ ul {
     padding-right: 1rem;
   }
 
-  .list_btn {
-    padding-bottom: 1rem;
-  }
-
   .list_img {
     width: 100%;
-    height: 11.25rem;
+    height: 10rem;
     display: block;
   }
 }
