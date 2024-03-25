@@ -339,8 +339,8 @@ ul {
 
 @media only screen and (max-width: 1270px) {
   .list_top h2 {
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight:900;
   }
 
   .thumbs_up {
