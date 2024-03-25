@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Dm Sans;
+}
+
+/* general css  */
+
+a {
+  text-decoration: none;
+}
+
+#formError {
+  color: red;
+}
+
+.fb_flex_new,
+.fb_blue_flex,
+.fb_menu_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fb_flex_new {
+  margin-bottom: 0rem !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+.fb_font {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02563rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fb_container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.listing_page {
+  margin: 2rem 1rem;
+}
+
+.listing_wrapper,
+.listing_box {
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+  border-radius: 0.625rem;
+  gap: 1rem;
+}
+.listing_wrapper {
+  border: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1), /* Larger shadow */
+  0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+.list_img {
+  width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 0.625rem;
+}
+
+.list_top {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.thumbs_up {
+  background-color: #222;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbs_up img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.list_top h2 {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.listing_img {
+  position: relative;
+  border-radius: 0.625rem;
+}
+
+.verified_tick {
+  background-color: #077838;
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.verified_tick img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rating_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #077838;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3125rem;
+  color: #fff;
+  font-family: DM Sans;
+  width: max-content;
+}
+
+.fb_stars {
+  --mobile_academy_percent: calc(var(--star_rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 25px;
+  font-family: Times;
+  line-height: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.fb_stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(
+    90deg,
+    #fc0 var(--mobile_academy_percent),
+    #dcdcdc var(--mobile_academy_percent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fb_star_section {
+  margin-top: 1rem;
+}
+
+.fb_flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.total_ratings {
+  color: #acacac;
+  font-size: 1rem;
+}
+
+.list_location {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.list_location img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.extra_info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.extra_sport {
+  background-color: #f5ebeb;
+  color: #626060;
+  padding: 0.35rem;
+  border-radius: 0.3125rem;
+  width: auto;
+  font-size: 0.75rem;
+}
+
+.view_list_btn,
+.view_list_btn_2 {
+  padding: 7px 15px;
+  border-radius: 0.3125rem;
+  color: #fff;
+  background-color: #077838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 2rem;
+  border: 1px solid transparent;
+}
+
+.view_list_btn_2 {
+  border: 1px solid #077838;
+  color: #077838;
+  background-color: #fff;
+}
+
+.view_list_btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.list_btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gap {
+  margin-bottom: 1rem;
+}
+.carousel {
+  position: relative;
+  border-radius: 0625rem;
+}
+
+.carousel_images img {
+  display: none;
+  border-radius: 0.625rem;
+}
+
+.carousel_images img.active {
+  display: block; /* Changed from flex to block for images. */
+}
+
+.carousel_dots {
+  position: absolute;
+  bottom: 30px; /* Adjusted for visual preference, can be changed. */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.carousel_contacts {
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the carousel. */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Take up the full width of the carousel. */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn't add to the width. */
+}
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  background-color: #dbd0d0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .list_top h2 {
+    font-size: 1rem;
+  }
+
+  .thumbs_up {
+    background-color: #222;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thumbs_up img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media only screen and (max-width: 1072px) {
+  .star_hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .row {
+    gap: 1rem;
+  }
+
+  .listing_box {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .listing_wrapper {
+    padding: 0;
+  }
+
+  .list_down,
+  .list_btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .list_btn {
+    padding-bottom: 1rem;
+  }
+
+  .list_img {
+    width: 100%;
+    height: 11.25rem;
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    gap: 1rem;
+  }
+}
