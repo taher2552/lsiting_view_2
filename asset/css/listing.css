@@ -343,8 +343,8 @@ ul {
 
 .mini_logo img {
   border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2.1rem;
+  width: 2.1rem;
 }
 
 .logo_details{
@@ -361,7 +361,7 @@ ul {
   justify-content: start;
 }
 .logo_info span{
- font-size: 0.75rem;
+ font-size: 0.7rem;
 }
 
 .logo_info span:nth-child(2){
@@ -369,6 +369,7 @@ ul {
   padding: 0rem 0.5rem;
   font-weight: 600;
   color:#fff;
+  font-size: 0.65rem;
 }
 
 /* General styles for the full-screen wrapper with a semi-transparent blurred background */
