@@ -522,6 +522,17 @@ ul {
   height: 0.875rem;
   width: 0.875rem;
 }
+  
+.top_logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.menu_img{
+  width: 2rem;
+  height: 2rem;
+}
 
 /* Responsive adjustments for non-mobile devices can be added here */
 
