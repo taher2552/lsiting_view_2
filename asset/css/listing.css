@@ -71,6 +71,14 @@ ul {
   gap: 1rem;
 }
 
+.listing_box{
+  gap:0.4rem;
+}
+
+.line{
+ color:#dcdcdc;
+}
+
 .listing_wrapper {
   border: 1px solid #dcdcdc;
   display: flex;
