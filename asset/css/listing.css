@@ -466,29 +466,29 @@ ul {
   color: #aaa;
 }
 
-.result_place{
+.result_place {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap:0.5rem;
+  gap: 0.5rem;
   font-family: DM Sans;
   font-size: 0.875rem;
 }
 
-.result_location{
+.result_location {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.precise_location{
-  color:#0076d7;
+.precise_location {
+  color: #0076d7;
   font-family: DM Sans;
   margin-left: 0.8rem;
   cursor: pointer;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap:0.5rem;
+  gap: 0.5rem;
   font-size: 0.875rem;
 }
 
@@ -517,41 +517,39 @@ ul {
   background-color: #f7f7f7;
 }
 
-
-.filter_sort img{
+.filter_sort img {
   height: 0.875rem;
   width: 0.875rem;
 }
-  
-.top_logo{
+
+.top_logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   padding-bottom: 0;
 }
-.menu_img{
+.menu_img {
   width: 2rem;
   height: 2rem;
 }
 
-.graph_view{
+.graph_view {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap:0.3rem;
+  gap: 0.3rem;
 }
 
-.localities{
+.localities {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
 
-.localities h2{
+.localities h2 {
   font-weight: 900;
   font-size: 1.2rem;
-
 }
 
 .grid-container {
@@ -569,15 +567,16 @@ ul {
   justify-content: center;
 }
 
-.grid-item img{
-  height: 1.5rem;
-  width: 1.5rem;
+.grid-item img {
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
-
-
-
-
+.grid-item span {
+  color: #222;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
 
 /* Responsive adjustments for non-mobile devices can be added here */
 
@@ -587,5 +586,3 @@ ul {
     font-weight: 900;
   }
 }
-
-
