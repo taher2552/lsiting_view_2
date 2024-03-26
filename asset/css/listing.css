@@ -79,6 +79,11 @@ ul {
  color:#dcdcdc;
 }
 
+.per_month{
+  font-size: 0.8rem;
+  color:#acacac;
+}
+
 .listing_wrapper {
   border: 1px solid #dcdcdc;
   display: flex;
@@ -215,6 +220,19 @@ ul {
   align-items: center;
   gap: 0.8rem;
   margin-top: 0.8rem;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 2rem;
+  overflow: auto;
+}
+
+.extra_info::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scrollbar */
+}
+
+/* This styles the scrollbar handle */
+.extra_info::-webkit-scrollbar-thumb {
+  background: blue; /* Color of the scrollbar thumb */
 }
 
 .extra_sport {
