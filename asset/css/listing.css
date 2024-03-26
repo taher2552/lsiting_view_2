@@ -158,7 +158,7 @@ ul {
 
 .verified_tick img {
   width: 0.9rem;
-  height:auto
+  height: auto;
 }
 
 .rating_num {
@@ -238,14 +238,12 @@ ul {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 1rem;
-  background-color: #dcdcdc;
-  width: 100%;
+  gap:0.5rem;
   padding: 0.5rem;
 }
 
 .gap {
-  margin-bottom:1.5rem;
+  margin-bottom: 1.5rem;
 }
 .carousel {
   position: relative;
@@ -329,6 +327,87 @@ ul {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.down_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dcdcdc;
+  width: 100%;
+  font-family:  DM Sans;
+}
+
+.mini_logo {
+  padding-left: 1rem;
+}
+
+.mini_logo img {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logo_details{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.logo_info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.logo_info span{
+ font-size: 0.75rem;
+}
+
+.logo_info span:nth-child(2){
+  background: linear-gradient(to right, orange, yellow);
+  padding: 0rem 0.5rem;
+  font-weight: 600;
+  color:#fff;
+}
+
+/* General styles for the full-screen wrapper with a semi-transparent blurred background */
+.list_popup_wrapper {
+  position: fixed; /* Fixed position to cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Flexbox to center the popup content */
+  justify-content: center;
+  align-items: flex-end; /* Align items at the bottom for mobile */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Styles for the popup content */
+.popup_content {
+  width: 100%; 
+  height: 50%; 
+  background-color: white; 
+  position: relative; 
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2); 
+ border-top-left-radius: 0.8rem;
+ border-top-right-radius: 0.8rem;
+ padding: 1rem;
+}
+
+/* Styles for the close button */
+.close_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments for non-mobile devices can be added here */
+
 
 @media only screen and (max-width: 1270px) {
   .list_top h2 {
