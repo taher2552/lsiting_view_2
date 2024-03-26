@@ -558,6 +558,10 @@ ul {
   gap: 10px;
   margin-top: 1rem;
   text-align: start;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.625rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .grid-item {
@@ -593,10 +597,6 @@ ul {
     gap: 10px;
     margin-top: 1rem;
     text-align: start;
-    border: 1px solid #dcdcdc;
-    border-radius: 0.625rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
   .list_top h2 {
     font-size: 1.2rem;
