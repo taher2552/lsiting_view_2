@@ -554,7 +554,7 @@ ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   margin-top: 1rem;
   text-align: start;
@@ -581,6 +581,23 @@ ul {
 /* Responsive adjustments for non-mobile devices can be added here */
 
 @media only screen and (max-width: 1270px) {
+  .list_top h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 1rem;
+    text-align: start;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.625rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .list_top h2 {
     font-size: 1.2rem;
     font-weight: 900;
