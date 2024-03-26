@@ -628,6 +628,7 @@ ul {
   padding: 1rem;
   position: sticky;
   top:10px;
+  text-align: center;
 }
 
 .filter_left h6{
