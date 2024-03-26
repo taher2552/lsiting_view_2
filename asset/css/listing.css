@@ -62,17 +62,29 @@ ul {
 
 .listing_wrapper,
 .listing_box {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
+  display: inline-flex;
   width: 100%;
   position: relative;
   border-radius: 0.625rem;
-  gap: 1rem;
+}
+.listing_wrapper {
+  border: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1),
+    /* Larger shadow */ 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.listing_box {
-  gap: 0.4rem;
+.list_img {
+  width: 18rem;
+  height: 12rem;
+  border-radius: 0.625rem;
+  object-fit: cover;
 }
 
 .line {
@@ -97,12 +109,6 @@ ul {
   border-radius: 8px;
 }
 
-.list_img {
-  width: 100%;
-  height: 10rem;
-  display: block;
-  border-radius: 0.625rem;
-}
 
 .list_top {
   display: flex;
@@ -129,6 +135,7 @@ ul {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .listing_img {
@@ -338,8 +345,25 @@ ul {
   cursor: pointer;
 }
 
+.whatsapp_btn button, .phone_btn button{
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 3px 12px;
+  background-color: #077838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.1rem;
+  color:white;
+  font-size: 0.875rem;
+}
+
+.phone_btn button{
+  background-color: #0076d7;
+}
+
 .white_phone img,
-.white_whatsapp img {
+.white_whatsapp img, .whatsapp_img {
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -355,7 +379,7 @@ ul {
 }
 
 .down_menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   background-color: #dcdcdc;
@@ -367,7 +391,7 @@ ul {
   padding-left: 1rem;
 }
 
-.mini_logo img {
+.mini_logo img, .mini_logo_2 img {
   border-radius: 50%;
   height: 2.3rem;
   width: 2.3rem;
@@ -385,7 +409,7 @@ ul {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 4rem;
+  width: 10rem;
 }
 .logo_info span {
   font-size: 0.7rem;
@@ -468,7 +492,7 @@ ul {
 
 .result_place {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
   font-family: DM Sans;
@@ -494,6 +518,7 @@ ul {
 
 .filter_section {
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap; /* Prevent wrapping */
   align-items: center;
   overflow-x: auto; /* Enable horizontal scrolling */
@@ -554,7 +579,7 @@ ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   margin-top: 1rem;
   text-align: start;
@@ -582,6 +607,13 @@ ul {
   font-weight: 700;
 }
 
+.last_line{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:1.5rem;
+}
+
 /* Responsive adjustments for non-mobile devices can be added here */
 
 @media only screen and (max-width: 1270px) {
@@ -602,4 +634,50 @@ ul {
     font-size: 1.2rem;
     font-weight: 900;
   }
+
+  .listing_box {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    border-radius: 0.625rem;
+    gap: 1rem;
+  }
+
+  
+ .list_img {
+  width: 100%;
+  height: 10rem;
+  display: block;
+  border-radius: 0.625rem;
+} 
+
+.list_top h2 {
+  margin-top: -0.5rem;
+}
+
+.down_menu {
+  display: flex;
+}
+
+.last_line{
+  display: none;
+}
+
+
+.logo_info {
+  width: 4rem;
+}
+
+.filter_section {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  gap: 0.5rem;
+  margin: 1rem;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
 }
