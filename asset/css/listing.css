@@ -514,6 +514,7 @@ ul {
   font-size: 0.875rem;
   cursor: pointer;
   white-space: nowrap; /* Prevent text from wrapping */
+  background-color: #f7f7f7;
 }
 
 
