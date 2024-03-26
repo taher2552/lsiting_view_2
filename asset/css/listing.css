@@ -568,6 +568,41 @@ ul {
   justify-content: center;
 }
 
+.icon-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.background-shape {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px; /* Space between the icon and the label */
+  background: linear-gradient(to right, #cc1836 0%, #ff7eb3 100%);
+  /* Star shape */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.icon-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.label {
+  display: block;
+  color: #333;
+  font-size: 16px;
+}
+
+.sector_name{
+  font-family: DM Sans;
+  color: #989696;
+}
+
+
 
 /* Responsive adjustments for non-mobile devices can be added here */
 
