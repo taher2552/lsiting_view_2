@@ -57,11 +57,12 @@ ul {
 }
 
 .listing_page {
-  margin: 2rem 6.25rem;
+  padding: 2rem 6.25rem;
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 1.5rem;
+  background-color: #f0f2f5;
 }
 
 .listing_wrapper,
@@ -70,6 +71,7 @@ ul {
   width: 100%;
   position: relative;
   border-radius: 0.625rem;
+  background-color: #fff;
 }
 .listing_wrapper {
   border: 1px solid #dcdcdc;
@@ -81,7 +83,7 @@ ul {
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1),
     /* Larger shadow */ 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.625rem;
 }
 
 .listing_box{
@@ -90,7 +92,7 @@ ul {
 
 .list_img {
   width: 18rem;
-  height: 12rem;
+  height: 12.5rem;
   border-radius: 0.625rem;
   object-fit: cover;
 }
@@ -114,7 +116,7 @@ ul {
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1),
     /* Larger shadow */ 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.625rem;
   width: 100%;
 }
 
@@ -295,8 +297,9 @@ ul {
 }
 .carousel {
   position: relative;
-  border-radius: 0625rem;
+  border-radius: 0.625rem;
 }
+
 
 .carousel_images img {
   display: none;
@@ -332,6 +335,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
 }
 
 .dot {
@@ -640,6 +645,7 @@ ul {
   top: 10px;
   text-align: center;
   width: 30%;
+  background-color: #fff;
 }
 
 .right_main {
@@ -692,8 +698,7 @@ ul {
   }
 
   .listing_page {
-    margin: 2rem 1rem;
-    gap: -1rem;
+    padding: 2rem 1rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -729,7 +734,7 @@ ul {
 
 
   .down_menu {
-    background-color: #dcdcdc;
+    background-color: #adaaaa;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -743,7 +748,7 @@ ul {
   }
 
   .listing_page {
-    margin: 2rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .search-box {
