@@ -92,7 +92,7 @@ ul {
 
 .list_img {
   width: 18rem;
-  height: 12.5rem;
+  height: 13rem;
   border-radius: 0.625rem;
   object-fit: cover;
 }
@@ -412,6 +412,7 @@ ul {
   width: 100%;
   font-family: DM Sans;
   gap: 1rem;
+  margin-top:0.5rem;
 }
 
 .mini_logo img,
@@ -433,7 +434,7 @@ ul {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 6rem;
+  width: 4rem;
 }
 .logo_info span {
   font-size: 0.7rem;
