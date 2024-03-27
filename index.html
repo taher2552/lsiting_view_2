@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="asset/css/listing.css">
+    <link rel="stylesheet" href="asset/css/header.css">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -15,8 +16,102 @@
 </head>
 
 <body>
+
+        <!-- top most header  -->
+
+        <header class="fb_container fb_flex fb_header_1 ">
+            <div>
+                <img src="asset/images/logo.svg" lodaing="lazy" alt="loading" width="106" height="34">
+            </div>
+    
+    
+    
+            <!-- search box  -->
+    
+            <div class="fb_search_field" style="display:block">
+                <div class="input-group fb_search_input">
+    
+    
+                    <input type="text" class="form-control fb_custom_search" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg" placeholder="Search players, coach, acadmey..." />
+    
+                    <button type="submit" class="fb_search_btn">
+                        <img src="asset/images/search.svg" lodaing="lazy" alt="loading" width="15" height="15" />
+                    </button>
+    
+                </div>
+            </div>
+    
+            <!-- search box ends  -->
+    
+    
+            <!-- another header which contains navbar menu and city  -->
+    
+            <section class="fb_header_2" style="display: none;">
+    
+                <div class="fb_nav_menu fb_font">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+    
+            </section>
+    
+            <!-- another header which contains navbar menu and city ends -->
+    
+            <div class="fb_login">
+    
+                <!-- <div class="fb_city_section" style="display: none;">
+    
+                    <div class="fb_club fb_city">
+                        <span class="fb_font">Select Your City</span>
+                        <img src="asset/images/black-arrow.svg" lodaing="lazy" alt="loading"  width="14" height="14">
+                    </div>
+                </div> -->
+    
+                <div>
+                    <button class="fb_login_btn fb_font">Register</button>
+                </div>
+    
+    
+            </div>
+    
+    
+        </header>
+    
+        <!-- top most header ends -->
+    
+        <!-- blue header starts  -->
+    
+        <header class="fb_blue_container fb_blue_flex fb_header_blue fb_font">
+    
+            <div>
+                <span class="fb_blue_home">Home</span>
+                <img src="asset/images/white-arrow.svg" lodaing="lazy" alt="loading" width="14" height="8">
+                <span class="fb_blue_home">Listing Page</span>
+                <img src="asset/images/white-arrow.svg" lodaing="lazy" alt="loading" width="14" height="8">
+                <span class="fb_blue_home">Delhi</span>
+            </div>
+    
+    
+            <div class="fb_nav_option fb_font">
+                <ul class="fb_nav_ul">
+                    <li class="fb_nav">Home</li>
+                    <li class="fb_sports fb_nav">Sports</li>
+                    <li class="fb_new_city fb_nav" id="selectedCity">City</li>
+                    <li class="fb_nav">Blogs</li>
+                    <li class="fb_nav">Competition</li>
+                    <li class="fb_nav">Contact</li>
+                    <li class="fb_nav">Login</li>
+                </ul>
+            </div>
+    
+        </header>
+    
+        <!-- blue header ends -->
     <header>
-        <div>
+        <div class="top_mob_header">
             <div class="top_logo">
                 <img src="asset/images/logo.svg" alt="">
                 <img src="asset/images/menu.png" alt="" class="menu_img">
@@ -33,17 +128,13 @@
             <div class="result_place">
                 <div>
                     <img src="asset/images/location_mob.svg" alt="" srcset="">
-                    <span>Results in "Delhi"</span>
+                    <span>6 Results in "Delhi"</span>
                 </div>
                 <span class="precise_location"><img src="asset/images/detect.svg" alt=""> User Precise Location</span>
             </div>
         </div>
 
         <div class="filter_section">
-            <div class="filter_sort">
-                <img src="asset/images/filter.svg" alt="filter">
-                <span>Filter</span>
-            </div>
             <div class="filter_sort">
                 <span>Sort By</span>
             </div>
@@ -112,29 +203,139 @@
 
     <section class="listing_page">
         <div class="filter_left">
-            <h6>Filters</h6>
+            <div class="filter_top">
+                <p class="fb_font" id="filter_new_heading">Filters</p>
+                <p class="fb_font" id="filter_new_heading_2">Clear All Filters</p>
+            </div>
+            <div class="mob_filter_input">
+                <label for="">Sort By</label>
+                <div class="sort_by">
+                    <div class="sort_btn"><span>Ascending</span></div>
+                    <div class="sort_btn"><span>Descending</span></div>
+                </div>
 
-            <div class="filter_flex">
-                <div class="filter_sort">
-                    <img src="asset/images/filter.svg" alt="filter">
-                    <span>Filter</span>
+            </div>
+
+            <div class="filter_check">
+                <p class="mob_filter_topic">Localities</p>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" checked />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Sector 1</p>
+                    </label>
                 </div>
-                <div class="filter_sort">
-                    <span>Sort By</span>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" checked />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Sector 2</p>
+                    </label>
                 </div>
-                <div class="filter_sort">
-                    <span>Top Rated</span>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Sector 3</p>
+                    </label>
                 </div>
-                <div class="filter_sort">
-                    <span>Verified</span>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Sector4</p>
+                    </label>
                 </div>
-                <div class="filter_sort">
-                    <span>Open Now</span>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Sector 5</p>
+                    </label>
+                </div>
+                <div>
+                   <p style="text-align: left; color: #0076d7; font-weight: 600; cursor: pointer;">More</p>
+                </div>
+
+                <p class="mob_filter_topic">Rating</p>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">Any</p>
+                    </label>
+                </div>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">3.0 <img src="asset/images/gold_star.svg" loading="lazy"
+                                alt="loading" width="14" height="14"></p>
+                    </label>
+                </div>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">4.0 <img src="asset/images/gold_star.svg" loading="lazy"
+                                alt="loading" width="14" height="14"></p>
+                    </label>
+                </div>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" checked />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_filter_sector">5.0 <img src="asset/images/gold_star.svg" loading="lazy"
+                                alt="loading" width="14" height="14"></p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mob_filter_slider">
+                <p class="mob_filter_topic">fee range (₹)</p>
+                <div class="mob_filter_range_slider">
+
+                    <input value="0" min="0" max="1000000" step="10000" type="range">
+                    <input value="1000000" min="0" max="1000000" step="10000" type="range">
+
+
+                    <div class="mob_academy_filter_value">
+                        <span class="rangeValues-1"></span>
+                        <span class="rangeValues-2"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="mob_filter_topic">More</p>
+
+                <div class="mob_filter_on_off">
+                    <p class="mob_filter_pic_on">Open Academies</p>
+                    <label class="mob_filter_switch">
+                        <input type="checkbox" checked>
+                        <span class="mob_switch_slider mob_switch_round"></span>
+                    </label>
+                </div>
+
+                <div class="mob_filter_on_off">
+                    <p class="mob_filter_pic_on">Verified Only</p>
+                    <label class="mob_filter_switch">
+                        <input type="checkbox">
+                        <span class="mob_switch_slider mob_switch_round"></span>
+                    </label>
                 </div>
             </div>
         </div>
         <div class="row right_main">
-
             <div class="col-12 gap">
                 <div class="listing_wrapper">
                     <div class="listing_box">
@@ -884,5 +1085,44 @@
             $(".less").hide(); // Hide the less icon
         });
     });
+
+</script>
+<script>
+    
+function getVals() {
+  // Get slider values
+  let parent = this.parentNode;
+  let slides = parent.getElementsByTagName("input");
+  let slide1 = parseFloat(slides[0].value);
+  let slide2 = parseFloat(slides[1].value);
+  // Neither slider will clip the other, so make sure we determine which is larger
+  if (slide1 > slide2) {
+    let tmp = slide2;
+    slide2 = slide1;
+    slide1 = tmp;
+  }
+
+  let displayElement = parent.getElementsByClassName("rangeValues-1")[0];
+  let displayElement2 = parent.getElementsByClassName("rangeValues-2")[0];
+  displayElement.innerHTML = "₹" + slide1;
+  displayElement2.innerHTML = "₹" + slide2;
+}
+
+window.onload = function () {
+  // Initialize Sliders
+  let sliderSections = document.getElementsByClassName(
+    "mob_filter_range_slider"
+  );
+  for (let x = 0; x < sliderSections.length; x++) {
+    let sliders = sliderSections[x].getElementsByTagName("input");
+    for (let y = 0; y < sliders.length; y++) {
+      if (sliders[y].type === "range") {
+        sliders[y].oninput = getVals;
+        // Manually trigger event first time to display values
+        sliders[y].oninput();
+      }
+    }
+  }
+};
 
 </script>

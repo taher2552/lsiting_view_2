@@ -86,7 +86,7 @@ ul {
   border-radius: 0.625rem;
 }
 
-.listing_box{
+.listing_box {
   width: 100%;
 }
 
@@ -212,6 +212,10 @@ ul {
   gap: 0.8rem;
 }
 
+.top_mob_header {
+  display: none;
+}
+
 .total_ratings {
   color: #acacac;
   font-size: 0.9rem;
@@ -232,11 +236,11 @@ ul {
   height: 1rem;
 }
 
-.list_location span{
-  width:100%;
+.list_location span {
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 
 .extra_info {
@@ -299,7 +303,6 @@ ul {
   position: relative;
   border-radius: 0.625rem;
 }
-
 
 .carousel_images img {
   display: none;
@@ -569,6 +572,13 @@ ul {
   width: 0.875rem;
 }
 
+.radio_flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .top_logo {
   display: flex;
   justify-content: space-between;
@@ -592,6 +602,7 @@ ul {
   padding-left: 6.25rem;
   padding-right: 6.25rem;
   padding-bottom: 1rem;
+  display: none;
 }
 
 .localities h2 {
@@ -656,12 +667,350 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-.filter_flex {
+.filter_top {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+#filter_new_heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+#filter_new_heading_2 {
+  color: #1991eb;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.mob_filter_input {
+  display: flex;
+  justify-content: start;
+  align-items: start;
   flex-direction: column;
+}
+
+.mob_filter_input label,
+.mob_filter_topic {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.filter_check p {
+  margin-bottom: 1rem;
+}
+
+.mob_filter_input input {
+  border-radius: 0.1875rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.mobile_login_label_checkbox {
+  display: block;
+  text-align: left;
+  color: #515c61;
+  padding: 0;
+  position: relative;
+  padding-left: 35px;
+  margin: 0 0 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: unset;
+  font-family: "DM Sans", sans-serif;
+}
+
+.mobile_login_label_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* .mobile_login_checkbox::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1991eb;
+} */
+
+.mobile_login_label_checkbox p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.mobile_login_label_checkbox p span {
+  font-weight: 600;
+}
+
+.mobile_login_label_checkbox p span a {
+  color: #000000;
+}
+
+.mobile_login_label_checkbox p span a:hover {
+  color: #1991eb;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox {
+  background: #1991eb;
+  border: 1px solid #1991eb;
+}
+
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox::after {
+  display: block;
+}
+
+/* When checkbox is checked */
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox {
+  background: #1991eb !important; /* Change background color */
+  border: 1px solid #1991eb; /* Change border color */
+}
+
+/* Show checkmark when checkbox is checked */
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox::after {
+  display: block;
+}
+
+.mob_filter_sector {
+  color: #505050 !important;
+  font-family: DM Sans !important;
+  font-size: 0.9rem !important;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.mobile_login_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+}
+
+.mobile_login_checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+/* slider css  */
+
+.mob_filter_slider {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  width: 100%;
+}
+
+.mob_filter_range_slider {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background-color: #1991eb;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 44%;
+  background: #1991eb;
+  margin-top: -6px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"] {
+  background-color: #1991eb;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #1991eb;
+}
+
+.mob_academy_filter_value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rangeValues-1 {
+  margin-top: 1.5rem;
+  color: #505050;
+  font-family: DM Sans;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.rangeValues-2 {
+  margin-top: 1.5rem;
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* slider css ends */
+
+/* switch css  */
+
+/* The switch - the box around the slider */
+.mob_filter_switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.mob_filter_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.mob_switch_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mob_switch_slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .mob_switch_slider {
+  background-color: #34c759;
+}
+
+input:focus + .mob_switch_slider {
+  box-shadow: 0 0 1px #34c759;
+}
+
+input:checked + .mob_switch_slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.mob_switch_slider.mob_switch_round {
+  border-radius: 34px;
+}
+
+.mob_switch_slider.mob_switch_round:before {
+  border-radius: 50%;
+}
+/* switch css ends */
+
+.mob_filter_on_off {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.mob_filter_pic_on {
+  color: #505050;
+  font-family: DM Sans;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
+.sort_by{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.sort_btn{
+  border: 1px solid #dcdcdc;
+  border-radius: 15rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #868181;
+  cursor: pointer;
 }
 
 /* Responsive adjustments for non-mobile devices can be added here */
@@ -709,10 +1058,14 @@ ul {
     margin-top: 1rem;
     text-align: start;
   }
-  
+
   .list_top h2 {
     font-size: 1.2rem;
     font-weight: 900;
+  }
+
+  .top_mob_header{
+    display: block;
   }
 
   .listing_box {
@@ -731,7 +1084,6 @@ ul {
     display: block;
     border-radius: 0.625rem;
   }
-
 
   .down_menu {
     background-color: #adaaaa;
@@ -770,12 +1122,19 @@ ul {
     padding-right: 0rem;
   }
 
-  .list_top h2, .fb_star_section, .list_location, .extra_info {
+  .list_top h2,
+  .fb_star_section,
+  .list_location,
+  .extra_info {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   .top_logo {
     padding: 1rem;
-}
+  }
+
+  .localities{
+    display: block;
+  }
 }
