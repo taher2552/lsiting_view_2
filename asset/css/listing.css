@@ -1016,6 +1016,18 @@ input:checked + .mob_switch_slider:before {
 
 /* Responsive adjustments for non-mobile devices can be added here */
 
+
+.localities_popup{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  width: 100%;
+}
+
 @media only screen and (max-width: 1270px) {
   .list_top h2 {
     font-size: 1.2rem;
@@ -1090,6 +1102,7 @@ input:checked + .mob_switch_slider:before {
     background-color: #adaaaa;
     padding-left: 1rem;
     padding-right: 1rem;
+    justify-content: space-between;
   }
 
   .logo_info {
