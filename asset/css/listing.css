@@ -1048,7 +1048,7 @@ input:checked + .mob_switch_slider:before {
   border-radius: 0.3125rem;
   width: 37rem;
   height: 18rem;
-  z-index: 2;
+  z-index: 2000;
   padding: 1rem;
   overflow: auto;
   display: none;

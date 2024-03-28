@@ -1246,14 +1246,17 @@
 
         $('#moreBtn').click(function() {
             $('.localities_popup').show();
+            $('.filter_left').css('overflow', 'visible')
         });
         $('#closeBtn').click(function() {
             $('.localities_popup').hide();
+            $('.filter_left').css('overflow', 'auto')
         });
 
         $(document).click(function(e) {
             if ($(e.target).closest("#moreBtn, .localities_popup").length === 0) {
                 $(".localities_popup").hide();
+                $('.filter_left').css('overflow', 'auto')
             }
         });
     });
