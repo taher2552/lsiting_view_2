@@ -62,7 +62,7 @@ ul {
   justify-content: center;
   align-items: start;
   gap: 1.5rem;
-  background-color: #f0f2f5;
+  background-color: #fff;
   position: relative;
 }
 
@@ -210,7 +210,7 @@ ul {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
 .top_mob_header {
@@ -248,7 +248,7 @@ ul {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.3rem;
   margin-top: 0.8rem;
   width: 100%;
   flex-wrap: wrap;
@@ -258,6 +258,7 @@ ul {
 
 .extra_info::-webkit-scrollbar {
   width: 5px; /* Width of the vertical scrollbar */
+  height: 5px;
 }
 
 /* This styles the scrollbar handle */
@@ -268,10 +269,10 @@ ul {
 .extra_sport {
   background-color: #f5ebeb;
   color: #626060;
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 0.2rem;
   border-radius: 0.3125rem;
   width: auto;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 .view_list_btn_2 {
@@ -407,7 +408,7 @@ ul {
 
 .down_menu {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   width: 100%;
@@ -491,7 +492,7 @@ ul {
 
 .search-box {
   position: relative;
-  margin: 1rem 6.25rem;
+  margin-bottom: 1rem;
 }
 
 .search-input {
@@ -526,9 +527,9 @@ ul {
   margin-bottom: 1rem;
 }
 
-.result_location {
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+.result_place img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .precise_location {
@@ -651,7 +652,7 @@ ul {
 }
 
 .filter_left {
-  height: max-content;
+  height: 94vh;
   border: 1px solid #dcdcdc;
   border-radius: 0.625rem;
   padding: 1rem;
@@ -661,6 +662,17 @@ ul {
   width: 30%;
   background-color: #fff;
   z-index: 1;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* This styles the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: blue; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Optional: Rounds the corners of the scrollbar thumb */
 }
 
 .right_main {
@@ -1097,6 +1109,7 @@ input:checked + .mob_switch_slider:before {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  min-width: 15rem;
 }
 .popup_box_up {
   display: flex;
@@ -1177,10 +1190,18 @@ input:checked + .mob_switch_slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 1rem;
+  width: 100%;
+  overflow: auto;
 }
 
 .popup_explore {
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+  border-radius: 0.625rem;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1205,6 +1226,11 @@ input:checked + .mob_switch_slider:before {
   width: 100%;
   background-color: #f0f9ff;
   gap: 1rem;
+}
+
+.results_in {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 1270px) {
@@ -1243,6 +1269,9 @@ input:checked + .mob_switch_slider:before {
   }
 }
 @media only screen and (max-width: 900px) {
+  .top_add_one {
+    display: none;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1258,6 +1287,11 @@ input:checked + .mob_switch_slider:before {
 
   .top_mob_header {
     display: block;
+  }
+  .result_location,
+  .filter_section {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .listing_box {
@@ -1281,7 +1315,6 @@ input:checked + .mob_switch_slider:before {
     background-color: #adaaaa;
     padding-left: 1rem;
     padding-right: 1rem;
-    justify-content: space-between;
   }
 
   .logo_info {
@@ -1295,16 +1328,6 @@ input:checked + .mob_switch_slider:before {
   .listing_page {
     padding: 2rem 0rem;
   }
-
-  .search-box {
-    margin: 1rem;
-  }
-
-  .result_location {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .localities {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1331,7 +1354,59 @@ input:checked + .mob_switch_slider:before {
     display: block;
   }
 
-  .top_add_one {
+  .listing_page {
+    padding-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popup_localieties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f0f9ff;
+    gap: 1rem;
+  }
+  .top_locals {
+    width: 22rem;
+  }
+
+  .popup_box_up {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .results_in {
+    font-size: 0.875rem;
+  }
+
+  .text_hide {
     display: none;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .top_locals {
+    width: 20rem;
+  }
+
+  .popup_explore h3 {
+    font-size: 1rem;
+  }
+
+  .popup_explore button {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .top_locals {
+    width: auto;
+  }
+
+  .precise_location {
+    font-size: 0.75rem;
   }
 }
